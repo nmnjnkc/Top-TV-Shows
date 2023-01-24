@@ -1,0 +1,42 @@
+.card {
+  position: relative;
+  // display: inline-block;
+  border: none;
+  border-radius: 0px 0px 10px 10px;
+  border: none;
+  -webkit-box-shadow: 10px 10px 5px -6px rgba(148,142,148,1);
+  -moz-box-shadow: 10px 10px 5px -6px rgba(148,142,148,1);
+  box-shadow: 10px 10px 5px -6px rgba(148,142,148,1);
+
+  .rating {
+    position: absolute;
+    bottom: 0px;
+    left: 70%;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // width: 50px;
+    // height: 50px;
+    background-color: #2278cf;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 50%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+// transform na on hover ne radi dok je ukljucen inspect
+.card:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .rating {
+    border-left: 100px;
+  }
+}
